@@ -1,8 +1,18 @@
 {% extends 'home/base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h2>Welcome to Home Page</h2>
-<p>This is home content.</p>
+
+{% include 'home/partials/hero.html' %}
+{% include 'home/partials/about.html' %}
+{% include 'home/partials/facts.html' %}
+{% include 'home/partials/feature.html' %}
+{% include 'home/partials/menu.html' %}
+{% include 'home/partials/team.html' %}
+{% include 'home/partials/testimonial.html' %}
+{% include 'home/partials/blog.html' %}
+{% include 'home/partials/instagram.html' %}
+
 {% endblock %}
